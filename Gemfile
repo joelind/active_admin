@@ -6,6 +6,7 @@ require File.expand_path('../spec/support/detect_rails_version', __FILE__)
 
 rails_version = ENV['RAILS'] || detect_rails_version || "3.1.0.rc10"
 gem 'rails',          rails_version
+puts "Detected rails version: #{rails_version}"
 
 case rails_version
 when /^3\.0/
